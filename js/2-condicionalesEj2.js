@@ -5,11 +5,21 @@
 
 let mes = parseInt(prompt('Ingrese el número del mes (1 al 12): 1- enero, 2-marzo'))
 
-if(mes === 1 || mes === 3 || mes === 5 || mes === 7 || mes === 8 || mes === 10 || mes === 12){
-    document.write('El mes seleccionado ('+mes +') tiene 31 días<br>');
-    document.write(`El mes seleccionado (${mes}) tiene 31 días`);
-}else if (mes === 2){
-    document.write(`El mes seleccionado (${mes}) tiene 28 0 29 días dependiendo del años`);
+if(!isNaN(mes)){
+    if(mes>0 && mes <=12){
+        if(mes === 1 || mes === 3 || mes === 5 || mes === 7 || mes === 8 || mes === 10 || mes === 12){
+            document.write('El mes seleccionado ('+mes +') tiene 31 días<br>');
+            document.write(`El mes seleccionado (${mes}) tiene 31 días`);
+        }else if (mes === 2){
+            document.write(`El mes seleccionado (${mes}) tiene 28 0 29 días dependiendo del años`);
+        }else{
+            document.write(`El mes seleccionado (${mes}) tiene 30 días`);
+        }
+    }else{
+        document.write(`Ingresó un número (${mes}) inválido`)
+    }
 }else{
-    document.write(`El mes seleccionado (${mes}) tiene 30 días`);
+    document.write(`El valor ingresado (${mes}), no es un número`)
 }
+
+
