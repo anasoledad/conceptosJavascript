@@ -4,3 +4,16 @@
     font-weight: 600;
     text-decoration: underline;
 }
+
+table{
+    border: 1px solid rgb(2, 69, 27);
+}
+
+td, th{
+    border: 1px solid rgb(2, 69, 27);
+    padding: 5px;
+}
+
+th{
+    background: rgb(185, 243, 216);
+}
