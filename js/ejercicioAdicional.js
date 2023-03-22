@@ -147,6 +147,3 @@ mostrarTabla('Tabla de Productos filtrados', protectoresSolares);
 buscarProducto('Sérum', listaProductos);
 buscarProducto('Bruma', listaProductos);
 
-function filtrarProductos(){
-
-}
